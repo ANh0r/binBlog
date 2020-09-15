@@ -3,23 +3,27 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle: ''
+title: RYAN BLOG
+subtitle: 'In the middle of night, in my dreams'
 description: ''
 keywords:
-author: John Doe
+author: Ryanhor
 language: en
 timezone: ''
 
 # URL
-## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+# If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
+url: https://ryanhor.com
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
   trailing_html: true # Set to false to remove trailing '.html' from permalinks
+
+permalink_pinyin:
+enable: true
+separator: '-' # default: '-'
 
 # Directory
 source_dir: source
@@ -93,9 +97,14 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: butterfly
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type: ''
+  type: git
+  repo: 
+    Ubuntu: root@101.132.166.153:/home/git/hexo/hexoBlog
+    github: git@github.com:ANh0r/ANh0r.github.io.git
+  branch: master
+
